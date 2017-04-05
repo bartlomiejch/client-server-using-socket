@@ -1,0 +1,10 @@
+create database events;
+
+use events;
+
+create table cpu_memory_usage_data (  
+id int auto_increment primary key, 
+cpu_percent_of_usage decimal(5,2),
+memory_percent_of_usage decimal(5,2),
+ip_address varchar(200),
+created timestamp default now());
